@@ -1,0 +1,76 @@
+<section class="content-header">
+                <div class="header-icon">
+                    <i class="pe-7s-note2"></i>
+                </div>
+                <div class="header-title">
+                    <form action="#" method="get" class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                    <button type="submit" name="search" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+                                </span>
+                        </div>
+                    </form>
+                    <h1>Music</h1>
+                    <small>Music list</small>
+                    <ol class="breadcrumb hidden-xs">
+                        <li><a href="/"><i class="pe-7s-home"></i> Home</a></li>
+                        <li class="active">Dashboard</li>
+                    </ol>
+                </div>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <!-- Form controls -->
+                    <div class="col-sm-12">
+                        <div class="panel panel-bd lobidrag">
+                            <div class="panel-heading">
+                                <div class="btn-group">
+                                    <a class="btn btn-primary" href="/admin101/songs">
+                                        <i class="fa fa-list"></i> Song List </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <form class="col-sm-6" enctype="multipart/form-data" method="POST" action="/admin101/songs/create">
+                                    <div class="form-group">
+                                        <label>Song Title</label>
+                                        <input type="text" class="form-control" name="songname" placeholder="Enter Song Title" required>
+                                    </div>
+                                    
+                                    <div class="form-group ">
+                                        <label>Song File <i class=" fa fa-file-sound-o"></i></label>
+                                        <input type="file" id="songfile" name="songfile">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Song Album </label>
+                                        <input type="text" class="form-control" name="songalbum" placeholder="Enter Song Album" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Featuring</label>
+                                        <input type="text" class="form-control" name="featuring" placeholder="Enter Featuring Artist" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Producer </label>
+                                        <input type="text" class="form-control" name="producer" placeholder="Enter Producer Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Song Length</label>
+                                        <input type="number" class="form-control" name="songlength" placeholder="Enter Song Length" required>
+                                    </div>
+
+                                     <div class="form-group">
+                                        <label>Production Cost</label>
+                                        <input type="number" class="form-control" name="expenditure" placeholder="Enter Production Cost" required>
+                                    </div>
+                                    <div class="reset-button">
+                                        <a href="#" class="btn btn-warning">Reset</a>
+                                        <input type="submit" class="btn btn-success" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>

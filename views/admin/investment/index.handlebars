@@ -1,0 +1,130 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <script>
+        const song = 
+    </script>
+    <div class="header-icon">
+        <i class="pe-7s-box1"></i>
+    </div>
+    <div class="header-title">
+        <form action="#" method="get" class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn"><i
+                            class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+        <h1>Songs</h1>
+        <small>Song list</small>
+        <ol class="breadcrumb hidden-xs">
+            <li><a href="/"><i class="pe-7s-home"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </div>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-bd lobidrag">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <a class="btn btn-success" href="/admin101/songs/create"> <i class="fa fa-plus"></i> Add Song
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="panel-header">
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="dataTables_length">
+                                    <label>Display
+                                        <select name="example_length">
+                                            <option value="10">10</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select> records per page</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="dataTables_length">
+                                    <div class="input-group custom-search-form">
+                                        <input type="search" class="form-control" placeholder="search..">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped">
+                        <thead>
+
+                            <tr>
+                                <th>Song Image</th>
+                                <th>Name</th>
+                                <th>Album</th>
+                                <th>Length</th>
+                                <th>Featuring</th>
+                                <th>Producer </th>
+                                <th>Expenditure </th>
+                                <th>Update</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each allSongs}}
+
+                            <tr>
+
+                                <td><img src="/assets/dist/img/avatar5.jpg" class="img-circle" alt="User Image"
+                                        height="50" width="50"></td>
+                                <td>{{name}}</td>
+                                <td>{{songAlbum}}</td>
+                                <td>{{songLength}}</td>
+                                <td>{{featuring}}</td>
+                                <td>{{producer}}</td>
+                                <td>&#8358; {{cost}}</td>
+                                <td>
+                                    <form action="/admin101/songs/delete/{{_id}}?newMethod=DELETE" method="POST">
+                                        <button type="submit" class="btn btn-danger btn-xs"><i
+                                                class="fa fa-trash-o"></i>
+                                        </button>
+                                    </form>
+
+                                </td>
+                            </tr>
+
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="page-nation text-right">
+                    <ul class="pagination pagination-large">
+                        <li class="disabled"><span>«</span></li>
+                        <li class="active"><span>1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li class="disabled"><span>...</span></li>
+                        <li>
+                        <li><a rel="next" href="#">Next</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+</section>

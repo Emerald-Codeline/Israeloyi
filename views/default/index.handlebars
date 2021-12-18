@@ -1,0 +1,117 @@
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="slider_active owl-carousel">
+        <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text ">
+                            <h3>
+                                Israel-Oyi
+                            </h3>
+                            <div class="video_service_btn">
+                                <a href="#downloads" class="boxed-btn3-white"> <i class="fa fa-play"></i>
+                                    Downloads</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text ">
+                            <h3>
+                            Israel-Oyi
+                            </h3>
+                            <div class="video_service_btn">
+                                <a href="/" class="boxed-btn3-white"> <i class="fa fa-play"></i>
+                                    Downloads</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text ">
+                            <h3>
+                            Israel-Oyi
+                            </h3>
+                            <div class="video_service_btn">
+                                <a href="/" class="boxed-btn3-white"> <i class="fa fa-play"></i>
+                                    Downloads</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="service_area" style="background: #DE6262;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+    <div class="container"
+        style="background-color: rgb(252, 203, 140); width:90%; padding-top: 50px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;"
+        id="downloads">
+        <div class="ad-text">
+            <a href="https://www.facebook.com/joel.odufu.ekowoicho.lee">
+                <span style="height: 100%; over-flow:hidden;"><img src="default/img/banner/joellee.jpg"
+                        style="height:50px;border-radius:50%;box-shadow:0 0 5px black; margin:10px; float:left;" alt=""></span>
+            </a>
+        
+            <h1 ></h1>
+        </div>
+        <div class="row text-center" id='songrows'>
+            {{#each allSongs}}
+            <div class="col-sm-4 col-md-4">
+                <div class="thumbnail"  style="box-shadow: 0 0 10px black; overflow:hidden">
+                    <img src="default/img/banner/song.jpg" class="img-thumbnail img-responsive" alt="Paris"
+                        style="object-fit: cover; width:200px; height:200px ">                
+                    
+                    <div id="naming" style="width: auto;
+                                 background-color: #fff;
+                                 border-left: 4px solid #af534c;
+                                 box-shadow:0 0 5px black">
+                                 <h3><i id="major" class="fa fa-sun-o" style="color: red;"> </i>{{name}}</h3>
+                    </div>
+                    <p>
+                    <i class="fa fa-tasks"></i>
+                    <i class="fa fa-cogs"></i>
+                    <a href="#">Album <span class="badge" style="color: red;">{{songAlbum}}</span></a>
+                    <br>
+                    <audio controls >
+                        <source src="{{songFile}}" >
+                    </audio>
+                    <strong style="color: rgb(45, 49, 41);">Produced by:</strong>
+                        {{producer}}<br>
+                    <i class="fa fa-group"></i><strong style="color: green;"> FEATURING:</strong> {{featuring}}   
+                    <a href="{{songFile}}"><i id="linker" class="fa fa-share-alt-square" aria-hidden="true"
+                        style="font-size: 2rem; color:green; float:left; margin-left:10%;"
+                        value="{{songFile}}"></i></a>                 
+                    </p>
+                </div>     
+                <hr>
+                <hr>
+            </div>
+            {{/each}}
+        </div>
+        <div class="ad-text">
+            <a href="https://www.facebook.com/joel.odufu.ekowoicho.lee">
+                <span style="height: 100%; over-flow:hidden;"><img src="default/img/banner/joellee.jpg"
+                        style="height:50px;border-radius:50%;box-shadow:0 0 5px black; margin:10px; float:left;" alt=""></span>
+            </a>
+        
+            <h1></h1>
+        </div>
+
+    </div>
+</div>

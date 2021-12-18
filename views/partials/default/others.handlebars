@@ -1,0 +1,792 @@
+
+            <!-- MARQUEE SCROLL -->           
+             <div class="bg-black marquee">
+                <div class="TickerNews" id="T1">
+                    <div class="ti_wrapper">             
+                        <div class="ti_slide">
+                            <div class="ti_content"> 
+                                <div class="ti_news"><a href="#"><img src="images/coin-icon/bitcoin.png" alt=""><span>Cashew: </span><span id="usd"> </span><span class="text-yellow p-lr5"></span></a></div>
+                                <div class="ti_news"><a href="#"><img src="images/coin-icon/bitcoin.png" alt=""><span>Sesimi: </span><span id="cny"> </span><span class="text-danger p-lr5"></span></a></div>
+                                <div class="ti_news"><a href="#"><img src="images/coin-icon/bitcoin.png" alt=""><span>Hibiscus: </span><span id="eur"> </span><span class="text-white p-lr5"></span></a></div>
+                                <div class="ti_news"><a href="#"><img src="images/coin-icon/bitcoin.png" alt=""><span>Cocoa: </span><span id="usd"> </span><span class="text-yellow p-lr5"></span></a></div>
+                                <div class="ti_news"><a href="#"><img src="images/coin-icon/bitcoin.png" alt=""><span>ShearNut&Butter: </span><span id="cny"> </span><span class="text-danger p-lr5"></span></a></div>
+                                <div class="ti_news"><a href="#"><img src="images/coin-icon/bitcoin.png" alt=""><span>Beans: </span><span id="eur"> </span><span class="text-white p-lr5"></span></a></div>
+                                <script>
+                                    $.ajax({
+                                        type:"GET",
+                                        url: "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,CNY,ETH",
+                                        dataType: 'text',
+                                        success: function(data)
+                                        {
+                                            var ret1 = data.replace('{"USD":','');
+                                            var tmp1 = ret1.split(",");
+                                            $('#usd').html('$ '+tmp1[0]);
+
+                                            var ret2 = data.replace('"EUR":','');
+                                            var tmp2 = ret2.split(",");
+                                            $('#eur').html('€ '+tmp2[1]);
+
+                                            var ret3 = data.replace('"CNY":','');
+                                            var tmp3 = ret3.split(",");
+                                            $('#cny').html('¥ '+tmp3[2]);
+                                        }
+                                    });
+                                </script>
+                            </div>                                     
+                        </div>
+                   </div>
+                </div>        
+             </div>
+            <!-- MARQUEE SCROLL SECTION  END -->    
+                      
+            <!-- OUR VALUE SECTION START -->           
+             <div class="section-full bg-primary">
+                <div class="container">
+                     <div class="section-content ">
+                        <!-- COLL-TO ACTION START -->
+                        <div class="wt-subscribe-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-9">
+                                        <div class="call-to-action-left p-tb20 ">
+                                            <h4 class="text-uppercase m-b10 font-weight-600">Invest in Commodity Trading.</h4>
+                                            <p>easy and reliable trading option.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="call-to-action-right p-tb30">
+                                            <a href="investment.html" class="site-button-secondry text-uppercase font-weight-600">
+                                                Learn More 
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- OUR VALUE SECTION  END -->
+
+             <!-- ABOUT COMPANY SECTION START -->           
+            <!-- ABOUT COMPANY SECTION  END --> 
+            
+            <!-- WHY CHOOSE US SECTION START  -->
+            <div class="section-full  p-t80 p-b80 bg-gray">
+            	<div class="container">
+                    <!-- TITLE START-->
+                    <div class="section-head text-center">
+                        <h2 class="text-uppercase">Why Sahara Investment?</h2>
+                        <div class="wt-separator-outer">
+                            <div class="wt-separator bg-primary"></div>
+                        </div>
+                        <p>Commodity trade contributes 60% to the country's GDP, and Green Sahara alone contributes 77% of that, this makes Sahara Investment reliable.</p>
+                    </div>
+                    <!-- TITLE END-->
+                    <div class="section-content no-col-gap">
+                        <div class="row">
+                        
+                            <!-- COLUMNS 1 -->
+                            <div class="col-md-4 col-sm-6 animate_line">
+                                <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
+                                    <div class="icon-lg text-primary m-b20">
+                                        <a href="#" class="icon-cell"><img src="images/icon/pick.png" alt=""></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="wt-tilte text-uppercase font-weight-500">Secure</h4>
+                                        <p>Operations performed are fully backed up on our servers, and are highly secured to ensure proper function of every system.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COLUMNS 2 -->
+                            <div class="col-md-4 col-sm-6 animate_line">
+                                <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
+                                    <div class="icon-lg text-primary m-b20">
+                                        <a href="#" class="icon-cell"><img src="images/icon/2.png" alt=""></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="wt-tilte text-uppercase font-weight-500">Investment Planning</h4>
+                                        <p>The investment plan we offer is money friendly in order for low income earners to become part of the network too.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COLUMNS 3 -->
+                            <div class="col-md-4 col-sm-6 animate_line">
+                                <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
+                                    <div class="icon-lg text-primary m-b20">
+                                        <a href="#" class="icon-cell"><img src="images/icon/f.png" alt=""></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="wt-tilte text-uppercase font-weight-500">Covered By Insurance</h4>
+                                        <p>All resources, servers and high end technological tools are all covered by insurance which makes loss of fund impossible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <!-- WHY CHOOSE US SECTION END -->                      
+            <!-- COMPANY DETAIL SECTION End -->   
+                       
+            <!-- HOW IT WORK SECTION START  -->
+            <div class="section-full  p-t80 p-b80 bg-gray">
+            	<div class="container">
+                    <!-- TITLE START-->
+                    <div class="section-head text-center">
+                    	<span class="wt-title-subline font-16 text-gray-dark m-b15">Three steps to start</span>
+                        <h2 class="text-uppercase">How It Work</h2>
+                        <div class="wt-separator-outer"><div class="wt-separator bg-primary"></div></div>
+                    </div>
+                    <!-- TITLE END-->
+                    <div class="section-content no-col-gap">
+                        <div class="row">
+                        
+                            <!-- COLUMNS 1 -->
+                            <div class="col-md-4 col-sm-4 step-number-block">
+                                <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
+                                    <div class="icon-lg text-primary m-b20">
+                                        <a href="#" class="icon-cell"><img src="images/icon/signup.png" alt=""></a>
+                                    </div>
+                                    <div class="icon-content">
+                                    	<div class="step-number">1</div>
+                                        <h4 class="wt-tilte text-uppercase font-weight-500">Signup an account</h4>
+                                        <p>Create a member account by completing your registration. We do not require much information from our members.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COLUMNS 2 -->
+                            <div class="col-md-4 col-sm-4 step-number-block">
+                                <div class="wt-icon-box-wraper  p-a30 center bg-secondry m-a5 ">
+                                    <div class="icon-lg m-b20">
+                                        <a href="#" class="icon-cell"><img src="images/icon/ip.png" alt=""></a>
+                                    </div>
+                                    <div class="icon-content text-white">
+                                    	<div class="step-number active">2</div>
+                                        <h4 class="wt-tilte text-uppercase font-weight-500">Select investment plan</h4>
+                                        <p>Deposit funds into your wallet and invest it according to the plan of your choice. Visit our investment page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COLUMNS 3 -->
+                            <div class="col-md-4 col-sm-4 step-number-block">
+                                <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
+                                    <div class="icon-lg text-primary m-b20">
+                                        <a href="#" class="icon-cell"><img src="images/icon/co.png" alt=""></a>
+                                    </div>
+                                    <div class="icon-content">
+                                    	<div class="step-number">3</div>
+                                        <h4 class="wt-tilte text-uppercase font-weight-500">Monitor & Withdraw</h4>
+                                        <p>You receive daily rewards from your investment. You can choose to withdraw them at any point in time or reinvest.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <!-- HOW IT WORK  SECTION END -->
+            
+            <!-- WHY CHOOSE US SECTION START  -->
+            <div class="section-full p-t80 p-b50">
+                <div class="container">
+                    
+                    <div class="m-b100">
+                    
+                        <div class="section-head">
+                            <h2 class=""><span class="text-black">MINING POOL SHARES</span></h2>
+                            <div class="wt-separator-outer">
+                              	<div class="wt-separator bg-primary"></div>
+                            </div>
+                        </div>
+                    	<!-- PRICING STYLE-3 COLUMNS 3 WITH GAP AND BACKGROUND -->
+                        <div class="section-content">
+                            <div class="pricingtable-row m-b30 no-col-gap">
+                                <div class="row">
+                                
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b40">
+                                        <div class="pricingtable-wrapper pricing-table-style-4">
+                                            <div class="pricingtable-inner bg-white radius">
+                                            	
+                                                <div class="overlay-wraper pricingtable-inner-overlay bg-no-repeat bg-cover" style="background-image:url(images/our-work/bronze.jpg);"> 
+                                                    <div class="pricingtable-title">
+                                                        <h3>Bronze</h3>
+                                                    </div>
+                                                    <div class="pricingtable-price">
+                                                        <span class="pricingtable-bx" style="font-size: 23pt;">$1,000-$1,500</span>
+                                                    </div>
+                                                    <div class="overlay-main bg-black opacity-07"></div>
+                                                </div>
+                                                
+                                                
+                                                <ul class="pricingtable-features">
+                                                    <li><i class="fa fa-check"></i> Profit Margin 10% </li>
+                                                    <li><i class="fa fa-check"></i> Enhanced security</li>
+                                                    <li><i class="fa fa-check"></i> 24/7 Support</li>
+                                                </ul>
+                                                
+                                                
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b40">
+                                        <div class="pricingtable-wrapper pricing-table-style-4">
+                                            <div class="pricingtable-inner bg-white radius">
+                                            	
+                                                <div class="overlay-wraper pricingtable-inner-overlay bg-no-repeat bg-cover" style="background-image:url(images/our-work/silver.jpg);"> 
+                                                    <div class="pricingtable-title">
+                                                        <h3>Silver</h3>
+                                                    </div>
+                                                    <div class="pricingtable-price">
+                                                        <span class="pricingtable-bx" style="font-size: 23pt;">$2,000-$2,500</span>
+                                                    </div>
+                                                    <div class="overlay-main bg-black opacity-07"></div>
+                                                </div>
+                                                
+                                                
+                                                <ul class="pricingtable-features">
+                                                    <li><i class="fa fa-check"></i> Profit Margin 12%</li>
+                                                    <li><i class="fa fa-check"></i> Enhanced security</li>
+                                                    <li><i class="fa fa-check"></i> 24/7 Support</li>
+                                                </ul>
+                                                
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b40">
+                                        <div class="pricingtable-wrapper pricing-table-style-4">
+                                            <div class="pricingtable-inner bg-white radius">
+                                            	
+                                                <div class="overlay-wraper pricingtable-inner-overlay bg-no-repeat bg-cover" style="background-image:url(images/our-work/gold.jpg);"> 
+                                                    <div class="pricingtable-title">
+                                                        <h3>Gold</h3>
+                                                    </div>
+                                                    <div class="pricingtable-price">
+                                                        <span class="pricingtable-bx" style="font-size: 23pt;">$3,000-$3,500</span>
+                                                    </div>
+                                                    <div class="overlay-main bg-black opacity-07"></div>
+                                                </div>
+                                                
+                                                
+                                                <ul class="pricingtable-features">
+                                                    <li><i class="fa fa-check"></i> Profit Margin 15% </li>
+                                                    <li><i class="fa fa-check"></i> Enhanced security</li>
+                                                    <li><i class="fa fa-check"></i> 24/7 Support</li>
+                                                </ul>
+                                                
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b40">
+                                        <div class="pricingtable-wrapper pricing-table-style-4">
+                                            <div class="pricingtable-inner pricingtable-highlight bg-white radius">
+                                            	
+                                                <div class="overlay-wraper pricingtable-inner-overlay bg-no-repeat bg-cover" style="background-image:url(images/our-work/fgf.jpg);"> 
+                                                    <div class="pricingtable-title">
+                                                        <h3>Sahara Pool</h3>
+                                                    </div>
+                                                    <div class="pricingtable-price">
+                                                        <span class="pricingtable-bx" style="font-size: 23pt;">$500</span>
+                                                    </div>
+                                                    <div class="overlay-main bg-black opacity-07"></div>
+                                                </div>
+
+                                                
+                                                
+                                                
+                                                <ul class="pricingtable-features">
+                                                    <li><i class="fa fa-check"></i> Profit Margin 7% </li>
+                                                    <li><i class="fa fa-check"></i> Enhanced security</li>
+                                                    <li><i class="fa fa-check"></i> 24/7 Support</li>
+                                                </ul>
+                                                
+                                            
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="wt-subscribe-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-9">
+                                     
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="call-to-action-right p-tb30">
+                                            <a href="investment.html" class="site-button-secondry text-uppercase font-weight-600">
+                                                Explore More 
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+          
+                    
+                    </div> 
+                    
+                </div>
+            </div>
+            <!-- WHY CHOOSE US SECTION END --> 
+                       
+            <!-- SECTION CONTENT START -->
+            <div class="section-full  p-tb80 bg-full-height bg-repeat-x graph-slide-image" style="background-image:url(images/background/bg-1.jpg);">
+            	
+                <div class="container">
+                        
+                        <div class="row">
+                        	<div class="col-md-6  clearfix">
+                            	<div class="bit-converter p-a40 p-b15 bg-white">
+                                	<div class="wt-box">
+                                    	<h2 class="text-uppercase m-t0 text-primary">Currency convertor</h2>
+                                        <p>Check the current value of major crypto currency in your local currency.</p>
+                                    </div>
+                                	<!--Currency Converter widget by FreeCurrencyRates.com -->
+
+                                <div id='gcw_mainFKW8hcxr9' class='gcw_mainFKW8hcxr9'></div>
+                                <a id='gcw_siteFKW8hcxr9' href='https://freecurrencyrates.com/en/'>FreeCurrencyRates.com</a>
+                                <script>function reloadFKW8hcxr9(){ var sc = document.getElementById('scFKW8hcxr9');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scFKW8hcxr9';sc.src = 'https://freecurrencyrates.com/en/widget-vertical-editable?iso=USD-EUR-XUL&df=2&p=FKW8hcxr9&v=fits&source=fcr&width=270&width_title=0&firstrowvalue=1&thm=E0CFC2,F4F0EC,D49768,CB842E,FFFFFF,E0CFC2,F4F0EC,B85700,000000&title=Currency%20Converter&tzo=420';var div = document.getElementById('gcw_mainFKW8hcxr9');div.parentNode.insertBefore(sc, div);} reloadFKW8hcxr9(); </script>
+                                <!-- put custom styles here: .gcw_mainFKW8hcxr9{}, .gcw_headerFKW8hcxr9{}, .gcw_ratesFKW8hcxr9{}, .gcw_sourceFKW8hcxr9{} -->
+                                <!--End of Currency Converter widget by FreeCurrencyRates.com -->
+                                </div>                               
+                            </div>
+                            <div class="col-md-6">
+                            	<div class="wt-box graph-part-right text-white">
+                                    <span class="text-uppercase text-primary display-block title-second">Invest in commodity trading and start earning</span>
+                                    <p><strong>To trade commodities profitably, you need atleast 10tonnes of aggregated farm products, transportaion mechanism, and knowledge of quality product. Then, once you get started, you’ll need to explore various product acquisition sites to stay competitive. It’s not easy to get started or stay up-to-date. That’s where Sahara Investment comes in</strong></p>
+                                    <ul class="list-check-circle primary">
+                                        <li>Select any of the investment plans we offer</li>
+                                        <li>Generate a life time income for yourself</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            <!-- SECTION CONTENT  END --> 
+            
+            <!-- SECTION CONTENT START -->
+            <div class="section-full p-t80 p-b50">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="wt-box">
+                                <!-- YOUTUBE VIDEO -->
+                                <div class="m-b30">
+                                    <div class="se.5=\ction-head">
+                                    </div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OrxmtDw4pVI"></iframe>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SECTION CONTENT END -->
+            
+            <!-- ABOUT COMPANY SECTION START -->           
+             <div class="section-full home-about-section p-tb80 bg-no-repeat bg-bottom-right bg-gray"  style="background-image:url(images/background/bg-coin.png)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                        <div id="tradingview_e65b6"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget(
+                        {
+                        "width": 400,
+                        "height": 610,
+                        "symbol": "NASDAQ:AAPL",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "light",
+                        "style": "1",
+                        "locale": "en",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_e65b6"
+                        }
+                        );
+                        </script>
+                        </div>
+<!-- TradingView Widget END -->
+                         </div>
+                        <div class="col-md-6">
+                            <!-- TITLE START -->
+                            <div class="p-b20 text-left">
+                                <span class="wt-title-subline font-16 text-gray-dark m-b15">What is sahara investment</span>
+                                <h2 class="text-uppercase">Sahara Investment makes commodity trading simple</h2>
+                                <div class="wt-separator-outer"><div class="wt-separator bg-primary"></div></div>
+                            </div>
+                            <!-- TITLE END -->
+                            <div class="section-content">
+                                <div class="wt-box">
+                                    <p>
+                                        <strong>To trade commodities profitably, you need atleast 10tonnes of aggregated farm products, transportaion mechanism, and knowledge of quality product. Then, once you get started, you’ll need to explore various product acquisition sites to stay competitive. It’s not easy to get started or stay up-to-date. That’s where Sahara Investment comes in.
+                                        </strong>
+                                    </p>
+                                    <p>We've been trading since 2014. Since then we’ve exported over 20,000,000tonnes of commidies.</p>
+                                    <a href="about.html" class="site-button text-uppercase m-r15">Learn More</a>
+                                    <a href="#" data-toggle="modal" data-target="#Register-form" class="site-button-secondry text-uppercase">Join us</a>
+                                </div>
+                            </div>                                	
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- ABOUT COMPANY SECTION  END --> 
+            
+            <!-- SECTION CONTENT START -->
+            <div class="section-full no-col-gap bg-repeat">
+                <div class="container-fluid">
+                        
+                        <div class="row">
+                        	<div class="col-md-6 col-sm-6 bg-secondry">
+                            	<div class="section-content p-tb60 p-r30 clearfix">
+                                	<div class="wt-left-part any-query">
+                                    	<img src="images/any-query.png" alt="">
+                                    	<div class="text-center">
+                                        	<h3 class="text-uppercase font-weight-500 text-white">Any Query?</h3>
+                                            <p class="text-white">You can reach us on any day from your mobile phone.</p>
+                                            <h4 class="text-primary">+234 9029 7631 90</h4>
+                                        </div>    
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="col-md-6 col-sm-6 bg-primary">
+                            	<div class="section-content p-tb60 p-l30 clearfix">
+                                    <div class="wt-right-part any-query-contact">
+                                    	<img src="images/any-query-contact.png" alt="">
+                                    	<div class="text-center">
+                                        	<h3 class="text-uppercase font-weight-500 text-white">Contact Us</h3>
+                                            <p class="text-white">In need of help? Contact our support team via email.</p>
+                                            <h4 class="text-secondry">support@saharainvestment.com</h4>
+                                        </div>                               
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            <!-- SECTION CONTENT  END --> 
+                               
+            <!-- CONTACT US SECTION END  -->         
+            <div class="section-full overlay-wraper bg-center bg-cover bg-no-repeat  bg-gray" style="background-image:url(images/background/bg2.jpg)">
+            	<div class="overlay-main bg-black opacity-07"></div>
+                <div class="container">
+                                	      
+                        <div class="row conntact-home">
+							<div class="col-md-7 col-sm-7">
+                            	<div class="section-content p-tb70">
+                                        <!-- TITLE -->
+                                        <div class="section-head text-left text-white">
+                                            <h2 class="text-uppercase">Request A Call Back</h2>
+                                            <div class="wt-separator-outer">
+                                                <div class="wt-separator bg-primary"></div>
+                                            </div>
+                                        </div>
+                                        <!-- TITLE -->                                	
+                                      <div class="contact-home-left">
+                                                                              	<form method="post" action="#">
+                                        	<div class="row">
+                                            
+                                            	<div class="col-md-6 col-sm-6">
+                                                	<div class="form-group">
+                                                    <input name="firstname" type="text" required class="form-control" placeholder="First name">
+                                                </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6">
+                                                	<div class="form-group">
+                                                    <input name="lastname" type="text" class="form-control" required placeholder="Last name">
+                                                </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6">
+                                                	<div class="form-group">
+                                                    <input name="email" type="email" class="form-control" required placeholder="Email">
+                                                </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6">
+                                                	<div class="form-group">
+                                                    <input name="subject" type="text" class="form-control" required placeholder="Subject">
+                                                </div>
+                                                </div>
+                                                
+                                                <div class="col-md-12">
+                                                	<div class="form-group">
+                                                    <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                                                </div>
+                                                </div>
+                                                
+                                               <div class="col-md-12">
+                                               		<button name="btn-send" type="submit" class="site-button skew-icon-btn btn-block">
+                                                  <span class="font-18 inline-block text-uppercase p-lr15">Submit Now</span> 
+                                                </button>
+                                                </div>
+                                                
+                                            </div>
+                                        </form>
+                                      </div>                             
+                                </div>
+                            </div>                        
+                            <div class="contact-home-right">
+                                    <div>
+                                        <img src="images/st-1.png" class="st-1" alt="">
+                                    </div>
+                                </div>
+                        </div>
+                    
+                </div>
+            </div> 
+            <!-- CONTACT US OFFER SECTION END  --> 
+            
+                        
+        
+        <!-- FOOTER START -->
+        <footer class="site-footer footer-dark bg-no-repeat bg-full-height bg-center "  style="background-image:url(images/background/footer-bg.jpg);">
+            <!-- FOOTER BLOCKES START -->  
+            <div class="footer-top overlay-wraper">
+                <div class="overlay-main bg-black opacity-05"></div>
+                <div class="container">
+                    <div class="row">
+                        <!-- ABOUT COMPANY -->
+                        <div class="col-md-3 col-sm-6">  
+                            <div class="widget widget_about">
+                                <h4 class="widget-title text-white">About Company</h4>
+                                <div class="logo-footer clearfix p-b15">
+                                    <a href="index-3.html"><img src="images/logo-light.html" width="230" height="67" alt=""/></a>
+                                </div>
+                                <p>Sahara Investment makes trading simple. To trade commodities profitably, you need atleast 10tonnes of aggregated farm products, transportaion mechanism, and knowledge of quality product. Then, once you get started, you’ll need to explore various product acquisition sites to stay competitive. It’s not easy to get started or stay up-to-date. That’s where Sahara Investment comes in and we’ve exported more than 20,000,000tonnes—which puts us in the Top 10 commodity trading operations in the Nigeria.
+                                </p>  
+                            </div>
+                        </div> 
+                        <!-- RESENT POST -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget widget_services">
+                                <h4 class="widget-title text-white">Learn more</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Investment</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>      
+                        <!-- USEFUL LINKS -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget widget_services">
+                                <h4 class="widget-title text-white">Translate</h4>
+                                <div id="google_translate_element"></div>
+                                <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                                }
+                                </script>
+            
+                                <script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
+                                
+                            </div>
+                        </div>
+                        <!-- NEWSLETTER -->
+                        <div class="col-md-3 col-sm-6">
+                                                        <div class="widget widget_newsletter">
+                                <h4 class="widget-title text-white">Newsletter</h4>
+                                <div class="newsletter-bx">
+                                    <form role="search" method="post">
+                                        <div class="input-group">
+                                        <input name="email" class="form-control" placeholder="ENTER YOUR EMAIL" type="text">
+                                        <span class="input-group-btn">
+                                            <button type="submit" name="btn-news" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
+                                        </span>
+                                    </div>
+                                     </form>
+                                </div>
+                            </div>
+                            <!-- SOCIAL LINKS -->
+                            <div class="widget widget_social_inks">
+                                <h4 class="widget-title text-white">Social Links</h4>
+                                <ul class="social-icons social-square social-darkest">
+                                    <li><a href="javascript:void(0);" class="fa fa-telegram"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    
+                       <div class="col-md-4 col-sm-6  p-tb20">
+                           <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
+                                <div class="icon-md text-primary">
+                                    <span class="iconmoon-travel"></span>
+                                </div>
+                                <div class="icon-content text-white">
+                                    <h5 class="wt-tilte text-uppercase m-b0">Location</h5>
+                                    <p>Abuja, Nigeria</p>
+                                </div>
+                           </div>
+                        </div>
+                       <div class="col-md-4 col-sm-6  p-tb20 ">
+                           <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix ">
+                                <div class="icon-md text-primary">
+                                    <span class="iconmoon-smartphone-1"></span>
+                                </div>
+                                <div class="icon-content text-white">
+                                    <h5 class="wt-tilte text-uppercase m-b0">Phone</h5>
+                                    <p class="m-b0">+234 9029 7631 90</p>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-md-4 col-sm-6 p-tb20">
+                           <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
+                                <div class="icon-md text-primary">
+                                    <span class="iconmoon-email"></span>
+                                </div>
+                                <div class="icon-content text-white">
+                                    <h5 class="wt-tilte text-uppercase m-b0">Email</h5>
+                                    <p class="m-b0">info@saharainvestment.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                  </div>
+                </div>
+            </div>
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-bottom  overlay-wraper">
+                <div class="overlay-main"></div>
+                <div class="constrot-strip"></div>
+                <div class="container p-t30">
+                    <div class="row">
+                        <div class="wt-footer-bot-left">
+                            <span class="copyrights-text">Copyright © 2020 Sahara Investment. All Rights Reserved. </span>
+                        </div>
+                        <div class="wt-footer-bot-right">
+                            <ul class="copyrights-nav pull-right"> 
+                                <li><a href="terms.html">Terms  & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+        
+        <!-- BUTTON TOP START -->
+        <button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>Top</button>
+
+
+        <!-- MODAL  LOGIN -->
+        <div id="Login-form" class="modal fade " role="dialog">
+          <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header bg-primary">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-white">Login Your Account</h4>
+              </div>
+              <div class="modal-body p-a30">
+                                                    <form method="post" action="/login">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input class="form-control" name="email" placeholder="Enter Email" type="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            <input class="form-control" name="password" placeholder="Enter Password" type="password" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="site-button-secondry text-uppercase btn-block m-b10" name="btn-login">Submit</button>
+                </form>
+              </div>
+              <div class="modal-footer text-center">
+                <div class="text-center"><img src="images/sss.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- MODAL  REGISTER -->
+        <div id="Register-form" class="modal fade " role="dialog">
+          <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header bg-primary">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-white">Register here</h4>
+              </div>
+              <div class="modal-body p-a30">
+                                                                            <form method="post" action="/register">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input class="form-control" name="firstname" placeholder="Enter Firstname" type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input class="form-control" name="surname" placeholder="Enter Surname" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input class="form-control" name="email" placeholder="Enter Email" type="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input class="form-control" name="refemail" value="" placeholder="Enter Referral Email (Optional)" type="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            <input class="form-control" name="password" placeholder="Enter Password" type="password" required>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            <input class="form-control" name="confirmpassword" placeholder="Confirm Password" type="password" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="site-button-secondry text-uppercase btn-block m-b10" name="btn-reg">Submit</button>
+                    
+                </form>
+              </div>
+              <div class="modal-footer text-center">
+                <div class="text-center"><img src="images/sss.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>             
+  
